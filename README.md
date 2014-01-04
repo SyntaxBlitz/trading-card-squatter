@@ -1,4 +1,5 @@
-== trading-card-squatter for Steam ==
+trading-card-squatter for Steam
+===============================
 
 This bot will log onto your Steam account, grab the "badges" page, and figure out how many card drops you have left for each game.
 
@@ -8,16 +9,18 @@ This is meant to be run once overnight or something, because interaction with St
 
 If the bot loses connection to Steam, node-steam will automatically reconnect it.
 
-I haven't actually checked to see if this sort of thing is *allowed* by Valve, or anything like that. I mostly wrote this for fun and only received card drops from it to test it. Personally I think it's more fun to receive them from playing the games anyway.
+I haven't actually checked to see if this sort of thing is *allowed* by Valve, or anything like that. I mostly wrote this for fun and only received card drops from it to test it. Personally I think it's more fun to receive them from playing the games anyway. Don't hold me responsible for whatever happens to your account for automating the trading card drop process.
 
-== Dependencies ==
+Dependencies
+------------
 
 This program is written in node.js.
 
-	* [node-steam](https://github.com/seishun/node-steam) by Nikolai Vavilov is requried to run the bot; this is what does most of the 	work with logging onto Steam.
-	* [request](https://github.com/mikeal/request) by Mikeal Rogers is used to grab the "badges" page.
-	* [cheerio](https://github.com/MatthewMueller/cheerio) by Matthew Mueller is used to parse the "badges" page.
+* [node-steam](https://github.com/seishun/node-steam) by Nikolai Vavilov is requried to run the bot; this is what does most of the 	work with logging onto Steam.
+* [request](https://github.com/mikeal/request) by Mikeal Rogers is used to grab the "badges" page.
+* [cheerio](https://github.com/MatthewMueller/cheerio) by Matthew Mueller is used to parse the "badges" page.
 
-== License ==
+License
+-------
 
 The bits that I've distributed here (i.e. not the dependencies) are released under the MIT License. Have fun!
